@@ -1,0 +1,17 @@
+models:
+  app_a:
+    compress_with:
+      type: tgz
+    store_with:
+      type: local
+      keep: 10
+      path: <<CURR_DIR>>/backup
+    databases:
+      example:
+        type: mysql
+        host: <<MYSQL_HOST>>
+        port: <<MYSQL_PORT>>
+        database: example
+        username: <<MYSQL_USER>>
+        password: <<MYSQL_PASSWORD>>
+      
